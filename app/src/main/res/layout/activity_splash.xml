@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/splash_bg"
+    android:layout_height="match_parent"
+    tools:context=".activity.SplashActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/iv_logo_layout_height"
+        android:layout_marginTop="@dimen/iv_logo_layout_marginTop"
+        android:id="@+id/iv_logo"
+        android:layout_marginLeft="@dimen/iv_logo_layout_marginLeft_marginRight"
+        android:layout_marginRight="@dimen/iv_logo_layout_marginLeft_marginRight"
+        android:src="@drawable/logo"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/rlPoweredBy_layout_marginTop"
+        android:layout_below="@+id/iv_logo"
+        android:id="@+id/rlPoweredBy">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tv_powered_textSize"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_powered"
+            android:text="Powered By"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:gravity="center_vertical" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tv_april_textSize"
+            android:textStyle="bold"
+            android:id="@+id/tv_april"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_powered"
+            android:text=" April Innovations"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:gravity="center_vertical" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

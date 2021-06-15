@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="11"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    tools:context=".activity.RequestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_weight="4">
+
+        <include
+            android:layout_width="match_parent"
+            android:id="@+id/custom_toolbar"
+            android:visibility="visible"
+            android:layout_height="wrap_content"
+            layout="@layout/pink_toolbar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Select"
+            android:textColor="@color/splash_bg"
+            android:textSize="@dimen/tv_selectrepair_textSize"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_marginTop="@dimen/view3_layout_marginTop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view3_layout_height"
+            android:layout_marginLeft="@dimen/view3_layout_marginLeft_marginRight"
+            android:layout_marginRight="@dimen/view3_layout_marginLeft_marginRight"
+            android:background="@color/splash_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:weightSum="4"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/rl_repair_layout_marginLeft_marginRight"
+                android:layout_marginRight="@dimen/rl_repair_layout_marginLeft_marginRight"
+                android:background="@drawable/tab_red"
+                android:layout_weight="1"
+                android:id="@+id/rl_repair"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/tv_repair_textSize"
+                    android:id="@+id/tv_repair"
+                    android:textColor="@android:color/white"
+                    android:text="Repair"
+                    android:layout_centerInParent="true"/>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_width="match_parent">
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/rl_repair_layout_marginLeft_marginRight"
+                android:layout_height="match_parent"
+                android:id="@+id/rl_servicing"
+                android:layout_marginRight="@dimen/rl_repair_layout_marginLeft_marginRight"
+                android:background="@drawable/tab_red"
+                android:layout_weight="1"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_servicing"
+                    android:textSize="@dimen/tv_repair_textSize"
+                    android:textColor="@android:color/white"
+                    android:text="Servicing"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="7"/>
+
+
+
+
+
+</LinearLayout>

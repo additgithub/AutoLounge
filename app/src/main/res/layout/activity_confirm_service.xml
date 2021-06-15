@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include android:id="@id/custom_toolbar"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/pink_toolbar" />
+
+    <TextView
+        android:textSize="@dimen/tv_selectrepair_textSize"
+        android:textColor="@color/splash_bg"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tv_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details" />
+
+    <View android:background="@color/splash_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/view3_layout_height"
+        android:layout_marginLeft="@dimen/view3_layout_marginLeft_marginRight"
+        android:layout_marginTop="@dimen/view3_layout_marginTop"
+        android:layout_marginRight="@dimen/view3_layout_marginLeft_marginRight" />
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30.0dip"
+        android:weightSum="2.0">
+
+        <TextView
+            android:textSize="@dimen/tv_request_textSize"
+            android:textColor="@color/textColor"
+            android:id="@+id/tv_service"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dip"
+            android:text="Service Type:"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:textSize="@dimen/tv_request_textSize"
+            android:textColor="@color/textColor"
+            android:id="@+id/tv_servicetype"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1.0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30.0dip" android:weightSum="2.0">
+        <TextView
+            android:textSize="@dimen/tv_request_textSize"
+            android:textColor="@color/textColor"
+            android:id="@id/tv_name" android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dip"
+            android:text="Service Name:" android:layout_weight="1.0" />
+        <TextView
+            android:textSize="@dimen/tv_request_textSize"
+            android:textColor="@color/textColor"
+            android:id="@+id/tv_servicename"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="" android:layout_weight="1.0" />
+    </LinearLayout>
+
+    <Button
+        android:textSize="@dimen/tv_proceed_textSize"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btn_address"
+        android:background="@drawable/button"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/btn_next_layout_height"
+        android:layout_marginLeft="@dimen/et_name_layout_marginLeft_marginRight"
+        android:layout_marginTop="@dimen/btn_proceed2_layout_marginTop"
+        android:layout_marginRight="@dimen/et_name_layout_marginLeft_marginRight"
+        android:text="Add Address" />
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:id="@+id/ll_address"
+        android:visibility="invisible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30.0dip"
+        android:weightSum="2.0">
+        <TextView
+            android:textSize="@dimen/tv_request_textSize"
+            android:textColor="@color/textColor"
+            android:id="@+id/tv_add"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dip"
+            android:text="Address:"
+            android:layout_weight="0.5" />
+
+        <fragment
+            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+            android:id="@+id/autoComplete_fragment"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="match_parent"></fragment>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        android:id="@+id/ll_pickupRequired"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30.0dip"
+        android:weightSum="2.0">
+        <TextView
+            android:textSize="@dimen/tv_request_textSize"
+            android:textColor="@color/textColor"
+            android:id="@+id/tv_pickupreq"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dip"
+            android:text="Pick-Up Required:"
+            android:singleLine="true"
+            android:layout_weight="1.5" />
+        <RelativeLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5">
+            <Switch
+                android:id="@+id/pickup_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_alignParentLeft="true"
+                android:thumbTint="@color/textColor" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:id="@+id/ll_pickupdate"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30.0dip"
+        android:weightSum="2.0">
+        <TextView android:textSize="@dimen/tv_request_textSize"
+            android:textColor="@color/textColor"
+            android:id="@+id/tv_pickdate"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dip"
+            android:text="Pick-Up Date:"
+            android:singleLine="true"
+            android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/tv_request_textSize"
+            android:textColor="@color/textColor"
+            android:id="@+id/tv_pickupdate"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <Button
+        android:textSize="@dimen/tv_proceed_textSize"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btn_book"
+        android:background="@drawable/button"
+        android:visibility="invisible"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/btn_next_layout_height"
+        android:layout_marginLeft="@dimen/et_name_layout_marginLeft_marginRight"
+        android:layout_marginTop="@dimen/btn_proceed2_layout_marginTop"
+        android:layout_marginRight="@dimen/et_name_layout_marginLeft_marginRight"
+        android:text="Book" />
+</LinearLayout>

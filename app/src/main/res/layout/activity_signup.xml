@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:weightSum="2"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignupActivity">
+
+    <RelativeLayout
+        android:id="@+id/actionBar"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/custom_toolbar"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/pink_toolbar"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.85"
+        android:layout_height="0dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/iv_signup_layout_width_height"
+            android:id="@+id/iv_signup"
+            android:src="@drawable/profile_edit"
+            android:layout_height="@dimen/iv_signup_layout_width_height" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:id="@+id/tv_signup"
+            android:layout_marginTop="@dimen/tv_signup_layout_marginTop"
+            android:layout_below="@+id/iv_signup"
+            android:textSize="@dimen/tv_signup_textSize"
+            android:textColor="@color/splash_bg"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1.15"
+        android:orientation="vertical"
+        android:layout_height="0dp">
+        
+        
+        <EditText
+            android:layout_width="wrap_content"
+            android:hint="Enter Your Name"
+            android:id="@+id/et_name"
+            android:textSize="@dimen/et_name_textSize"
+            android:textAlignment="center"
+            android:singleLine="true"
+            android:textColor="@color/splash_bg"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_marginLeft="@dimen/et_name_layout_marginLeft_marginRight"
+            android:layout_marginRight="@dimen/et_name_layout_marginLeft_marginRight"
+            android:layout_height="wrap_content" />
+
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view2_layout_height"
+            android:layout_marginLeft="@dimen/et_name_layout_marginLeft_marginRight"
+            android:layout_marginRight="@dimen/et_name_layout_marginLeft_marginRight"
+            android:background="@color/splash_bg"/>
+
+
+
+        <EditText
+            android:layout_marginTop="@dimen/et_email_layout_marginTop"
+            android:layout_width="wrap_content"
+            android:id="@+id/et_email"
+            android:hint="Enter Your E-mail-Id"
+            android:textSize="@dimen/et_name_textSize"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textColor="@color/splash_bg"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_marginLeft="@dimen/et_name_layout_marginLeft_marginRight"
+            android:layout_marginRight="@dimen/et_name_layout_marginLeft_marginRight"
+            android:layout_height="wrap_content" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view2_layout_height"
+            android:layout_marginLeft="@dimen/et_name_layout_marginLeft_marginRight"
+            android:layout_marginRight="@dimen/et_name_layout_marginLeft_marginRight"
+            android:background="@color/splash_bg"/>
+
+
+
+        <TextView
+            android:layout_marginTop="@dimen/tv_mobilenumber_layout_marginTop"
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_mobilenumber"
+            android:textSize="@dimen/et_name_textSize"
+            android:textColor="@color/splash_bg"
+            android:layout_gravity="center_horizontal"
+            android:text="+91 "
+            android:layout_height="wrap_content" />
+
+
+        <View
+            android:layout_marginTop="@dimen/et_email_layout_marginTop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view2_layout_height"
+            android:layout_marginLeft="@dimen/et_name_layout_marginLeft_marginRight"
+            android:layout_marginRight="@dimen/et_name_layout_marginLeft_marginRight"
+            android:background="@color/splash_bg"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/btn_next_layout_marginTop"
+            android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+
+            android:text="Next"
+            android:visibility="gone"
+            android:textSize="@dimen/tv_proceed_textSize"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button"
+            android:id="@+id/btn_next"
+            android:layout_marginLeft="@dimen/et_name_layout_marginLeft_marginRight"
+            android:layout_marginRight="@dimen/et_name_layout_marginLeft_marginRight"
+            android:layout_height="@dimen/btn_next_layout_height"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="Update"
+            android:textSize="@dimen/tv_proceed_textSize"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button"
+            android:id="@+id/btn_Update"
+            android:layout_marginLeft="@dimen/et_name_layout_marginLeft_marginRight"
+            android:layout_marginRight="@dimen/et_name_layout_marginLeft_marginRight"
+            android:layout_height="@dimen/btn_next_layout_height"
+            android:layout_gravity="center_horizontal"/>
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

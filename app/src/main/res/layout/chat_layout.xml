@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_doctorChatMsg"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/tab_green_chat"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_doctorChatMsg"
+            android:layout_width="match_parent"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_doctorChatImg"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:padding="@dimen/_4sdp"
+        android:background="@drawable/green_border"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="130dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_doctorChatImg"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"></ImageView>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_patientChatMsg"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/tab_red_chat"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_patientChatMsg"
+            android:layout_width="match_parent"
+            android:textSize="15sp"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_patientChatImg"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:padding="@dimen/_4sdp"
+        android:background="@drawable/red_border"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_patientChatImg"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"></ImageView>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

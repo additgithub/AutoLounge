@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.ChatActivity">
+
+    <LinearLayout
+        android:id="@+id/backInclude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="@dimen/btn_back_layout_width_height"
+                android:id="@+id/btn_backOne"
+                android:background="@drawable/pink_back_button"
+                android:src="@android:color/transparent"
+                android:layout_height="@dimen/btn_back_layout_width_height" />
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="4.2"
+            android:layout_height="match_parent">
+
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/backlayout"
+            android:layout_height="@dimen/_50sdp"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <RelativeLayout
+                android:id="@+id/rl_back"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="@dimen/btn_back_layout_width_height"
+                    android:id="@+id/custom_toolbar"
+                    android:background="@drawable/pink_back_button"
+                    android:src="@android:color/transparent"
+                    android:layout_height="@dimen/btn_back_layout_width_height" />
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="4.2"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/toolbar_tv_carname_textSize"
+
+                    android:id="@+id/tv_carname"
+                    android:layout_centerVertical="true"
+                    android:visibility="invisible"
+                    android:textColor="@color/splash_bg"
+                    android:layout_height="wrap_content"
+                    android:text="Honda City (IDLE)"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_chatImageFull"
+            android:visibility="gone"
+            android:layout_below="@+id/backlayout"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_selectedImage"
+        android:layout_below="@+id/backInclude"
+        android:nestedScrollingEnabled="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:visibility="visible"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_selectedImage"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_above="@+id/rl_msgtyping"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_height="@dimen/_150sdp">
+
+        <ImageView
+            android:id="@+id/iv_pickedimage"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="@dimen/_150sdp"/>
+
+        <ImageView
+            android:id="@+id/iv_cross"
+            android:visibility="visible"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/icons8_close_window_80"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"/>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/rl_msgtyping"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_emilid"
+            android:background="@drawable/purple_border"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_marginLeft="20dp"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/et_message"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:layout_height="match_parent"
+                android:hint="Type a message"
+                android:textSize="15dp"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_marginLeft="20dp"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_addImg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:src="@drawable/icons8_attach_"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_sendMsg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:rotation="330"
+                android:src="@drawable/ic_menu_send"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

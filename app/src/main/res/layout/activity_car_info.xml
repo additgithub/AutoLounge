@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:orientation="vertical" 
+    android:background="@android:color/white" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/custom_toolbar"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+    <include 
+
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        layout="@layout/pink_toolbar" />
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:orientation="vertical" 
+        android:background="@android:color/white" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" 
+        android:weightSum="2.0">
+        
+        <RelativeLayout 
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" 
+            android:layout_weight="1.0">
+            
+            <ImageView 
+                android:id="@+id/iv_signup" 
+                android:layout_width="@dimen/iv_signup_layout_width_height" 
+                android:layout_height="@dimen/iv_signup_layout_width_height" 
+                android:src="@drawable/add_vehicle" 
+                android:layout_centerInParent="true" />
+            
+            <TextView 
+                android:textSize="@dimen/tv_signup_textSize" 
+                android:textColor="@color/splash_bg" 
+                android:id="@+id/tv_carinfo"
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="@dimen/tv_signup_layout_marginTop" 
+                android:text="Car Info" 
+                android:layout_below="@+id/iv_signup" 
+                android:layout_centerHorizontal="true" />
+            
+            
+        </RelativeLayout>
+
+        <LinearLayout 
+            android:orientation="vertical" 
+            android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <EditText
+                android:textSize="@dimen/et_name_textSize"
+                android:textColor="@color/splash_bg"
+                android:textColorHint="@android:color/darker_gray"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/et_regno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/et_name_layout_marginLeft_marginRight"
+                android:layout_marginRight="@dimen/et_name_layout_marginLeft_marginRight"
+                android:hint="Car Registration Number"
+                android:singleLine="true"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:backgroundTint="@android:color/transparent" />
+            <View android:background="@color/splash_bg" android:layout_width="fill_parent" android:layout_height="@dimen/view2_layout_height" android:layout_marginLeft="@dimen/et_name_layout_marginLeft_marginRight" android:layout_marginRight="@dimen/et_name_layout_marginLeft_marginRight" />
+            <EditText
+                android:textSize="@dimen/et_name_textSize"
+                android:textColor="@color/splash_bg"
+                android:textColorHint="@android:color/darker_gray"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/et_kmrun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/et_name_layout_marginLeft_marginRight"
+                android:layout_marginTop="@dimen/et_email_layout_marginTop"
+                android:layout_marginRight="@dimen/et_name_layout_marginLeft_marginRight"
+                android:hint="Kms Run"
+                android:singleLine="true"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:backgroundTint="@android:color/transparent" />
+            <View android:background="@color/splash_bg" android:layout_width="fill_parent" android:layout_height="@dimen/view2_layout_height" android:layout_marginLeft="@dimen/et_name_layout_marginLeft_marginRight" android:layout_marginRight="@dimen/et_name_layout_marginLeft_marginRight" />
+            <EditText
+                android:textSize="@dimen/et_name_textSize"
+                android:textColor="@color/splash_bg"
+                android:textColorHint="@android:color/darker_gray"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/et_dop"
+                android:focusable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/et_name_layout_marginLeft_marginRight"
+                android:layout_marginTop="@dimen/et_email_layout_marginTop"
+                android:layout_marginRight="@dimen/et_name_layout_marginLeft_marginRight"
+                android:hint="Date Of Purchase yyyy-mm-dd"
+                android:singleLine="true"
+                android:inputType="date"
+                android:textAlignment="center"
+                android:backgroundTint="@android:color/transparent" />
+
+            <View android:background="@color/splash_bg" android:layout_width="fill_parent" android:layout_height="@dimen/view2_layout_height" android:layout_marginLeft="@dimen/et_name_layout_marginLeft_marginRight" android:layout_marginRight="@dimen/et_name_layout_marginLeft_marginRight" />
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_updateInfo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/btn_next_layout_height" android:layout_marginLeft="@dimen/et_name_layout_marginLeft_marginRight" android:layout_marginTop="@dimen/btn_next_layout_marginTop" android:layout_marginRight="@dimen/et_name_layout_marginLeft_marginRight" android:weightSum="2.0">
+                <Button android:textSize="@dimen/tv_proceed_textSize" android:textColor="@android:color/white" android:id="@+id/btn_update" android:background="@drawable/button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Update" android:layout_weight="1.0" />
+                <View android:background="@android:color/white" android:layout_width="5.0dip" android:layout_height="fill_parent" />
+                <Button android:textSize="@dimen/tv_proceed_textSize" android:textColor="@android:color/white" android:id="@+id/btn_delete" android:background="@drawable/button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Delete" android:layout_weight="1.0" />
+            </LinearLayout>
+            <Button
+                android:textSize="@dimen/tv_proceed_textSize"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/btn_addcar"
+                android:background="@drawable/button"
+                android:visibility="visible"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/btn_next_layout_height"
+                android:layout_marginLeft="@dimen/et_name_layout_marginLeft_marginRight"
+                android:layout_marginTop="@dimen/btn_next_layout_marginTop"
+                android:layout_marginRight="@dimen/et_name_layout_marginLeft_marginRight"
+                android:text="Add Car" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

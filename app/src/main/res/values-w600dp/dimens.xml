@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Dimensions for Splash Screen-->
+
+    <dimen name="iv_logo_layout_height">200dp</dimen>
+    <dimen name="iv_logo_layout_marginTop">180dp</dimen>
+    <dimen name="iv_logo_layout_marginLeft_marginRight">30dp</dimen>
+    <dimen name="rlPoweredBy_layout_marginTop">300dp</dimen>
+    <dimen name="tv_powered_textSize">20sp</dimen>
+    <dimen name="tv_april_textSize">24sp</dimen>
+
+
+
+    <!--Dimension for GetOtpActivity Screen-->
+
+    <dimen name="rl_autolounge_layout_marginTop">120dp</dimen>
+    <dimen name="iv_autolounge_layout_marginRight_marginLeft">30dp</dimen>
+    <dimen name="rl_enterMobile_marginTop">100dp</dimen>
+    <dimen name="et_mobile_textSize">27sp</dimen>
+    <dimen name="view_layout_height">2dp</dimen>
+    <dimen name="view_layout_marginLeft_marginRight">50dp</dimen>
+    <dimen name="btn_proceed_layout_marginTop">40dp</dimen>
+    <dimen name="btn_proceed_layout_height">55dp</dimen>
+    <dimen name="btn_proceed_layout_marginLeft_marginRight">50dp</dimen>
+    <dimen name="tv_proceed_textSize">24sp</dimen>
+    <dimen name="tv_otpsent_textSize">22sp</dimen>
+    <dimen name="tv_notyour_marginTop">10dp</dimen>
+    <dimen name="btn_resend_layout_width">120dp</dimen>
+
+
+    <!--Dimension for SignUpActivity and Car Info Activity-->
+
+    <dimen name="iv_signup_layout_width_height">250dp</dimen>
+    <dimen name="tv_signup_layout_marginTop">20dp</dimen>
+    <dimen name="tv_signup_textSize">34sp</dimen>
+    <dimen name="et_name_textSize">27sp</dimen>
+    <dimen name="et_name_layout_marginLeft_marginRight">30dp</dimen>
+    <dimen name="view2_layout_height">1dp</dimen>
+    <dimen name="et_email_layout_marginTop">10dp</dimen>
+    <dimen name="tv_mobilenumber_layout_marginTop">20dp</dimen>
+    <dimen name="btn_next_layout_marginTop">80dp</dimen>
+    <dimen name="btn_next_layout_height">60dp</dimen>
+
+
+    <!--Dimension For Select Car Activity-->
+
+    <dimen name="iv_car_layout_width">400dp</dimen>
+    <dimen name="iv_car_layout_height">250dp</dimen>
+    <dimen name="btn_proceed2_layout_marginTop">50dp</dimen>
+
+
+    <!--Dimension for pink toolbar-->
+
+    <dimen name="btn_back_layout_width_height">60dp</dimen>
+    <dimen name="toolbar_tv_carname_textSize">22sp</dimen>
+
+
+    <!--Dimension for recycler view item-->
+
+    <dimen name="rv_variantitem_layout_margin">3dp</dimen>
+    <dimen name="rv_variantitem_layout_height">90dp</dimen>
+    <dimen name="tv_variantname_textSize">24sp</dimen>
+
+
+    <!--Dimension for Car Details Activity-->
+
+    <dimen name="ll_selected_car_layout_marginLeft_marginRight">20dp</dimen>
+    <dimen name="ll_selected_car_layout_height">160dp</dimen>
+    <dimen name="tv_carname2_layout_marginTop">30dp</dimen>
+    <dimen name="tv_carname2_textSize">20sp</dimen>
+    <dimen name="tv_carnumber_textSize">24sp</dimen>
+    <dimen name="tv_totalrun_layout_marginTop">20dp</dimen>
+    <dimen name="iv_car2_layout_height">105dp</dimen>
+    <dimen name="iv_car2_padding">20dp</dimen>
+    <dimen name="rl_request_layout_marginBottom">30dp</dimen>
+    <dimen name="rl_request_layout_height">100dp</dimen>
+    <dimen name="tv_request_textSize">22sp</dimen>
+
+
+    <!--Dimension for Repair Activity-->
+
+    <dimen name="tv_selectrepair_textSize">28sp</dimen>
+    <dimen name="view3_layout_marginTop">10dp</dimen>
+    <dimen name="view3_layout_height">2dp</dimen>
+    <dimen name="view3_layout_marginLeft_marginRight">30dp</dimen>
+    <dimen name="rv_repair_layout_margin">20dp</dimen>
+
+
+    <!--Dimension for Request Activity-->
+
+    <dimen name="rl_repair_layout_marginLeft_marginRight">30dp</dimen>
+    <dimen name="tv_repair_textSize">28sp</dimen>
+
+
+    <!--Dimension for Request Received Activity-->
+
+    <dimen name="tv_yourrequest_textSize">30sp</dimen>
+    <dimen name="tv_youll_textSize">20sp</dimen>
+    <dimen name="tv_youll_layout_marginTop">50dp</dimen>
+
+
+    <!--Dimensions for service item-->
+
+    <dimen name="ll_card_layout_height">190dp</dimen>
+    <dimen name="ll_card_layout_marginTop_marginBottom">5dp</dimen>
+    <dimen name="ll_inner_card_paddingLeft">20dp</dimen>
+    <dimen name="tv_type_layout_marginTop">30dp</dimen>
+    <dimen name="tv_type_textSize">22sp</dimen>
+    <dimen name="tv_date_textSize">26sp</dimen>
+    <dimen name="tv_ongoing_layout_marginTop">10dp</dimen>
+    <dimen name="iv_invisible_layout_height">115dp</dimen>
+    <dimen name="tv_status_layout_marginTop">35dp</dimen>
+
+
+    <!--Dimensions for app bar main-->
+
+    <dimen name="tv_toolbar_textSize">18sp</dimen>
+
+
+    <!--Dimension for activity_main-->
+
+    <dimen name="ll_profile_layout_height">100dp</dimen>
+    <dimen name="ll_profile_layout_marginTop">20dp</dimen>
+    <dimen name="ll_profile_layout_marginLeft">10dp</dimen>
+    <dimen name="iv_profilepic_layout_margin">10dp</dimen>
+    <dimen name="ll_name_layout_margin">20dp</dimen>
+    <dimen name="tv_name_textSize">24sp</dimen>
+    <dimen name="tv_owner_textSize">18sp</dimen>
+    <dimen name="view4_layout_height">2dp</dimen>
+    <dimen name="ll_AddNotiLog_layout_marginLeft">20dp</dimen>
+    <dimen name="ll_AddNotiLog_layout_height">170dp</dimen>
+    <dimen name="iv_drawercar_layout_width_height">30dp</dimen>
+    <dimen name="tv_addnewcar_textSize">20sp</dimen>
+    <dimen name="tv_addnewcar_layout_marginLeft">20dp</dimen>
+    <dimen name="ll_aboutus_layout_height">120dp</dimen>
+    <dimen name="iv_facebook_layout_margin">30dp</dimen>
+    <dimen name="rlPoweredBy_layout_marginLeft">50dp</dimen>
+    <dimen name="tv_powered2_textSize">12sp</dimen>
+    <dimen name="tv_april2_textSize">16sp</dimen>
+
+
+    <!--Dimensions for Car Item-->
+
+    <dimen name="car_item_iv_car_layout_marginLeft">50dp</dimen>
+    <dimen name="car_item_iv_car_layout_marginTop">40dp</dimen>
+    <dimen name="car_item_iv_car_layout_marginBottom">20dp</dimen>
+    <dimen name="car_item_iv_car_layout_height">150dp</dimen>
+    <dimen name="ll_oval_layout_marginRight">200dp</dimen>
+    <dimen name="ll_oval_layout_height">130dp</dimen>
+    <dimen name="ll_carname_layout_margin">20dp</dimen>
+    <dimen name="item_tv_carname_textSize">20sp</dimen>
+    <dimen name="item_tv_carnumber_textSize">22sp</dimen>
+    <dimen name="item_tv_kmrun_textSize">20sp</dimen>
+
+
+    <!--Dimensions for settings icon on Request received activity-->
+
+    <dimen name="settings_icon_layout_width_height">200dp</dimen>
+
+
+</resources>

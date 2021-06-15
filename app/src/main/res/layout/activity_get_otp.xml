@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/getotp_bg"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.GetOtpActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_autolounge"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/rl_autolounge_layout_marginTop"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/iv_autolounge_layout_marginRight_marginLeft"
+            android:id="@+id/iv_autolounge"
+            android:layout_marginLeft="@dimen/iv_autolounge_layout_marginRight_marginLeft"
+            android:src="@drawable/the_auto_lounge_india_text"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:id="@+id/rl_enterMobile"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rl_enterMobile_marginTop">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_23sdp"
+            android:layout_gravity="center_horizontal"
+            android:text="Enter Your Mobile Number"/>
+
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:id="@+id/et_mobile"
+            android:hint="+91 9123456789"
+            android:textSize="@dimen/et_mobile_textSize"
+            android:inputType="number"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_layout_height"
+            android:layout_marginLeft="@dimen/view_layout_marginLeft_marginRight"
+            android:layout_marginRight="@dimen/view_layout_marginLeft_marginRight"
+            android:background="@android:color/white"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/btn_proceed_layout_marginTop"
+            android:id="@+id/btn_proceed"
+            android:background="@drawable/proceed_button"
+            android:layout_marginLeft="@dimen/btn_proceed_layout_marginLeft_marginRight"
+            android:layout_marginRight="@dimen/btn_proceed_layout_marginLeft_marginRight"
+            android:layout_height="@dimen/btn_proceed_layout_height"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proceed"
+                android:id="@+id/tv_proceed"
+                android:textSize="@dimen/tv_proceed_textSize"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"/>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/ll_otp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rl_enterMobile_marginTop">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/tv_otpsent_textSize"
+            android:textAlignment="center"
+            android:id="@+id/tv_otpsent"
+            android:layout_gravity="center_horizontal"
+            android:text="We have sent an OTP to +919000000000"
+            android:layout_height="wrap_content" />
+
+
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/tv_notyour_marginTop"
+            android:id="@+id/tv_notyour"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/tv_otpsent_textSize"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/your_string_here"
+            android:layout_height="wrap_content" />
+
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:hint="Enter Your One Time Password"
+            android:id="@+id/et_otp"
+            android:singleLine="true"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/et_mobile_textSize"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_layout_height"
+            android:layout_marginLeft="@dimen/view_layout_marginLeft_marginRight"
+            android:layout_marginRight="@dimen/view_layout_marginLeft_marginRight"
+            android:background="@android:color/white"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/btn_proceed_layout_marginTop"
+            android:id="@+id/btn_submit"
+            android:background="@drawable/proceed_button"
+            android:layout_marginLeft="@dimen/btn_proceed_layout_marginLeft_marginRight"
+            android:layout_marginRight="@dimen/btn_proceed_layout_marginLeft_marginRight"
+            android:layout_height="@dimen/btn_proceed_layout_height"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:id="@+id/tv_submit"
+                android:textSize="@dimen/tv_proceed_textSize"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"/>
+
+
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_didnt"
+            android:layout_marginTop="@dimen/btn_proceed_layout_marginTop"
+            android:textSize="@dimen/tv_otpsent_textSize"
+            android:textColor="@android:color/white"
+            android:text="Didn't received an OTP?"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/btn_resend_layout_width"
+            android:layout_marginTop="@dimen/btn_proceed_layout_marginTop"
+            android:id="@+id/btn_resend"
+            android:background="@drawable/proceed_button"
+            android:layout_height="@dimen/btn_proceed_layout_height"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Re-Send"
+                android:id="@+id/tv_resend"
+                android:textSize="@dimen/tv_proceed_textSize"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

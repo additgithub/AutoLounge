@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ll_card_layout_height"
+    android:layout_marginTop="@dimen/ll_card_layout_marginTop_marginBottom"
+    android:layout_marginBottom="@dimen/ll_card_layout_marginTop_marginBottom"
+    android:id="@+id/ll_card"
+    android:orientation="horizontal"
+    android:background="@drawable/blue_card"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/ll_inner_card"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/ll_inner_card_paddingLeft">
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tv_type_layout_marginTop"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/tv_type_textSize" />
+
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/tv_date_textSize" />
+
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tv_status_layout_marginTop"
+            android:text="Service status"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/tv_type_textSize" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/iv_invisible_layout_height"
+            android:id="@+id/iv_invisible"
+            android:src="@drawable/car_demo"
+            android:visibility="invisible" />
+
+
+
+        <TextView
+            android:id="@+id/tv_ongoing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/tv_ongoing_layout_marginTop"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/tv_date_textSize" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

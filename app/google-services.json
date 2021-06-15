@@ -1,0 +1,155 @@
+{
+  "project_info": {
+    "project_number": "102917261636",
+    "firebase_url": "https://autolounge-2e5a3.firebaseio.com",
+    "project_id": "autolounge-2e5a3",
+    "storage_bucket": "autolounge-2e5a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102917261636:android:4943caa8dfef002c",
+        "android_client_info": {
+          "package_name": "com.aprilinnovations.autolounge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "102917261636-3odfgsgd746k36jf2kmq1ui251ljhk5c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aprilinnovations.autolounge",
+            "certificate_hash": "3a1f1a3b19b63137f17ee83ead55290845f36551"
+          }
+        },
+        {
+          "client_id": "102917261636-5u8eftm58sabpccd2dh1uq6vbl77sc6d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aprilinnovations.autolounge",
+            "certificate_hash": "59f88468f2479e013b0cd9041b227044720d2ce0"
+          }
+        },
+        {
+          "client_id": "102917261636-669pf0up221c1s1q4uoj1kqismgqth50.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aprilinnovations.autolounge",
+            "certificate_hash": "3930139fe8be896913ff97f1a36bd5c0f03186e8"
+          }
+        },
+        {
+          "client_id": "102917261636-lkfgrsc9nl2j2atl1pp000u7r1gmfglb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aprilinnovations.autolounge",
+            "certificate_hash": "5e311c10c2c3ddf92cae96caac33de2b69d28236"
+          }
+        },
+        {
+          "client_id": "102917261636-ms69tt6nq9goe9l06bs1jh9m4io36tst.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aprilinnovations.autolounge",
+            "certificate_hash": "e57785c5ee59e18b9e258e48f08bfb97c066cf43"
+          }
+        },
+        {
+          "client_id": "102917261636-r8jkndb40rti2b7hocjnesro8dkmkl22.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aprilinnovations.autolounge",
+            "certificate_hash": "bab44398d5149f9deec35aedba56d4de9dac657a"
+          }
+        },
+        {
+          "client_id": "102917261636-08dkulmk68bs9v8h27b5u0oq6p0kmrlt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1O82tfJ4HPW9LOqdpL8YoYBz2q_vq30A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "102917261636-08dkulmk68bs9v8h27b5u0oq6p0kmrlt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "102917261636-6mul1rj8aap6pto7bpb75ukp97cnb9sq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.aprilinnovations.Autolounge"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102917261636:android:8c3f66675eb761bdbbef11",
+        "android_client_info": {
+          "package_name": "com.aprilinnovations.autoloungeindia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "102917261636-2g70li9ksit4o89lmclev9ms0d1e545m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aprilinnovations.autoloungeindia",
+            "certificate_hash": "c47690dbe1efde5764b6ffcb3160785266e5532a"
+          }
+        },
+        {
+          "client_id": "102917261636-k6p9o99aa5cfhgjl0eg0lcrr2ccjc33n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aprilinnovations.autoloungeindia",
+            "certificate_hash": "59f88468f2479e013b0cd9041b227044720d2ce0"
+          }
+        },
+        {
+          "client_id": "102917261636-l5a80kbi2ejtviaja97ginsg5l1l6uk7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aprilinnovations.autoloungeindia",
+            "certificate_hash": "3930139fe8be896913ff97f1a36bd5c0f03186e8"
+          }
+        },
+        {
+          "client_id": "102917261636-08dkulmk68bs9v8h27b5u0oq6p0kmrlt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1O82tfJ4HPW9LOqdpL8YoYBz2q_vq30A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "102917261636-08dkulmk68bs9v8h27b5u0oq6p0kmrlt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "102917261636-6mul1rj8aap6pto7bpb75ukp97cnb9sq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.aprilinnovations.Autolounge"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

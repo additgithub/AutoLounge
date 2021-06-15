@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    tools:context=".activity.EmargencyContact">
+
+    <include
+        android:layout_width="match_parent"
+        android:id="@+id/custom_toolbar"
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+        layout="@layout/pink_toolbar"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Notifications"
+        android:textColor="@color/splash_bg"
+        android:textSize="@dimen/tv_selectrepair_textSize"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_marginTop="@dimen/view3_layout_marginTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view3_layout_height"
+        android:layout_marginLeft="@dimen/view3_layout_marginLeft_marginRight"
+        android:layout_marginRight="@dimen/view3_layout_marginLeft_marginRight"
+        android:background="@color/splash_bg"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/rv_repair_layout_margin"
+        android:id="@+id/rv_emargencyContact"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
