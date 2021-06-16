@@ -21,7 +21,8 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import com.aprilinnovations.autoloungeindia.R;
+
+import com.additinfotech.autoloungein.R;
 import com.aprilinnovations.autoloungeindia.adapter.ChatAdapter;
 import com.aprilinnovations.autoloungeindia.async.bean.PickResult;
 import com.aprilinnovations.autoloungeindia.async.bundle.PickSetup;

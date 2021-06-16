@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.aprilinnovations.autoloungeindia.R;
+import com.additinfotech.autoloungein.R;
 import com.aprilinnovations.autoloungeindia.activity.ConfirmServiceActivity;
 import com.aprilinnovations.autoloungeindia.datamodel.ServiceModel;
 

@@ -20,7 +20,8 @@ import androidx.core.content.FileProvider;
 import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 
-import com.aprilinnovations.autoloungeindia.R;
+
+import com.additinfotech.autoloungein.R;
 import com.aprilinnovations.autoloungeindia.async.bundle.PickSetup;
 import com.aprilinnovations.autoloungeindia.async.enums.EPickType;
 import com.aprilinnovations.autoloungeindia.async.keep.Keep;

@@ -8,6 +8,50 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:102917261636:android:b639b373965687b5bbef11",
+        "android_client_info": {
+          "package_name": "com.additinfotech.autoloungein"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "102917261636-n09acofbjm9mf70cgvkgqm221o0t17np.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.additinfotech.autoloungein",
+            "certificate_hash": "59f88468f2479e013b0cd9041b227044720d2ce0"
+          }
+        },
+        {
+          "client_id": "102917261636-08dkulmk68bs9v8h27b5u0oq6p0kmrlt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1O82tfJ4HPW9LOqdpL8YoYBz2q_vq30A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "102917261636-08dkulmk68bs9v8h27b5u0oq6p0kmrlt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "102917261636-6mul1rj8aap6pto7bpb75ukp97cnb9sq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.aprilinnovations.Autolounge"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:102917261636:android:4943caa8dfef002c",
         "android_client_info": {
           "package_name": "com.aprilinnovations.autolounge"

@@ -14,7 +14,8 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.aprilinnovations.autoloungeindia.R;
+
+import com.additinfotech.autoloungein.R;
 import com.aprilinnovations.autoloungeindia.classes.ApiConfig;
 import com.aprilinnovations.autoloungeindia.classes.AppConfig;
 import com.aprilinnovations.autoloungeindia.helper.UniversalHelper;

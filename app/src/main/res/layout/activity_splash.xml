@@ -47,7 +47,7 @@
             android:id="@+id/tv_april"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/tv_powered"
-            android:text=" April Innovations"
+            android:text=" Addit InfoTech"
             android:textColor="@android:color/white"
             android:textAlignment="center"
             android:gravity="center_vertical" />

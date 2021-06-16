@@ -1,37 +1,31 @@
 package com.aprilinnovations.autoloungeindia.activity;
 
-import android.Manifest;
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-import androidx.core.app.ActivityCompat;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 import android.text.TextUtils;
 import android.util.Log;
-import android.view.View;
-import com.google.android.material.navigation.NavigationView;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.aprilinnovations.autoloungeindia.R;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.additinfotech.autoloungein.R;
 import com.aprilinnovations.autoloungeindia.adapter.CarAdapter;
 import com.aprilinnovations.autoloungeindia.classes.ApiConfig;
 import com.aprilinnovations.autoloungeindia.classes.AppConfig;
@@ -42,6 +36,9 @@ import com.aprilinnovations.autoloungeindia.retrofitResponse.UserCarListResponse
 import com.aprilinnovations.autoloungeindia.retrofitResponse.UserProfile;
 import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.InstanceIdResult;
 
@@ -76,22 +73,22 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         myContext = this;
 
         helper = new UniversalHelper(this);
 
-        userId = helper.loadPreferences("userId");
-        authToken = helper.loadPreferences("authToken");
+        userId = UniversalHelper.loadPreferences("userId");
+        authToken = UniversalHelper.loadPreferences("authToken");
 
         progressDialog = new ProgressDialog(myContext);
         progressDialog.setMessage("Please wait...");
 
-        rv_car = (RecyclerView)findViewById(R.id.rv_cars);
+        rv_car = findViewById(R.id.rv_cars);
 
-        iv_bell = (ImageView)findViewById(R.id.iv_bell);
+        iv_bell = findViewById(R.id.iv_bell);
 
         tv_name = findViewById(R.id.tv_name);
         tv_april = findViewById(R.id.tv_april);
@@ -118,14 +115,14 @@ public class MainActivity extends AppCompatActivity
         slide.setStartPosition(0);
         rv_car.setAdapter(slide);
 
-        helper.savePreferences("userIsLogin","Yes");
+        UniversalHelper.savePreferences("userIsLogin","Yes");
 
 
 
         ll_addNewCar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                helper.savePreferences("comeFrom","getOtpActivity");
+                UniversalHelper.savePreferences("comeFrom","getOtpActivity");
                 startActivity(new Intent(MainActivity.this, SelectCarActivity.class));
             }
         });
@@ -133,7 +130,7 @@ public class MainActivity extends AppCompatActivity
         ll_profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                helper.savePreferences("fromWhere","mainActivity");
+                UniversalHelper.savePreferences("fromWhere","mainActivity");
                 startActivity(new Intent(MainActivity.this, SignupActivity.class));
             }
         });
@@ -214,7 +211,7 @@ public class MainActivity extends AppCompatActivity
 
         //prepareData();
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -223,14 +220,14 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         toggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.colorAccent));
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
         iv_bell.setOnClickListener(new View.OnClickListener() {
@@ -253,7 +250,7 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
@@ -303,7 +300,7 @@ public class MainActivity extends AppCompatActivity
 
         }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
@@ -450,7 +447,7 @@ public class MainActivity extends AppCompatActivity
                     Log.v("Responseabc", loginResponse.getMessage());
                     if (TextUtils.equals(loginResponse.getStatus(), "SUCCESS")){
 
-                        helper.savePreferences("userIsLogin","No");
+                        UniversalHelper.savePreferences("userIsLogin","No");
                         startActivity(new Intent(MainActivity.this, GetOtpActivity.class));
                     }
                 } else {

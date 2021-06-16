@@ -17,7 +17,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.aprilinnovations.autoloungeindia.R;
+import com.additinfotech.autoloungein.R;
 import com.aprilinnovations.autoloungeindia.adapter.ServiceHistoryAdapter;
 import com.aprilinnovations.autoloungeindia.classes.ApiConfig;
 import com.aprilinnovations.autoloungeindia.classes.AppConfig;

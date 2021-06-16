@@ -18,7 +18,8 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.aprilinnovations.autoloungeindia.R;
+import com.additinfotech.autoloungein.R;
+
 import com.aprilinnovations.autoloungeindia.classes.ApiConfig;
 import com.aprilinnovations.autoloungeindia.classes.AppConfig;
 import com.aprilinnovations.autoloungeindia.helper.UniversalHelper;
@@ -201,7 +202,7 @@ public class GetOtpActivity extends AppCompatActivity {
                         rl_enterMobile.setVisibility(View.GONE);
                         ll_otp.setVisibility(View.VISIBLE);
                         sendVerificationCode(phoneNumber);
-                        helper.savePreferences("phoneNumber",phoneNumber);
+                        UniversalHelper.savePreferences("phoneNumber",phoneNumber);
                         //loginApi();
                         //getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE);
 
@@ -209,7 +210,7 @@ public class GetOtpActivity extends AppCompatActivity {
                             return;
                         }
 
-                        tv_otpsent.setText("We have sent an OTP to "+ helper.loadPreferences("phoneNumber"));
+                        tv_otpsent.setText("We have sent an OTP to "+ UniversalHelper.loadPreferences("phoneNumber"));
 
                         if (helper.isConnectingToInternet()){
                             startPhoneNumberVerification(phoneNumber);
@@ -235,7 +236,7 @@ public class GetOtpActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (helper.isConnectingToInternet()){
-                    resendVerificationCode(helper.loadPreferences("phoneNumber"), mResendToken);
+                    resendVerificationCode(UniversalHelper.loadPreferences("phoneNumber"), mResendToken);
                 }
 
                 new AlertDialog.Builder(myContext, R.style.TintTheme)
@@ -351,9 +352,9 @@ public class GetOtpActivity extends AppCompatActivity {
                             }
 
 
-                            helper.savePreferences("FirstTimeOtp","1");
-                            String phoneNumber = helper.loadPreferences("phoneNumber");
-                            helper.savePreferences("phoneNumber", phoneNumber);
+                            UniversalHelper.savePreferences("FirstTimeOtp","1");
+                            String phoneNumber = UniversalHelper.loadPreferences("phoneNumber");
+                            UniversalHelper.savePreferences("phoneNumber", phoneNumber);
                             // Sign in success, update UI with the signed-in user's information
 
                             FirebaseUser user = task.getResult().getUser();
@@ -362,7 +363,7 @@ public class GetOtpActivity extends AppCompatActivity {
                             // [END_EXCLUDE]
                         } else {
 
-                            helper.savePreferences("FirstTimeOtp", "0");
+                            UniversalHelper.savePreferences("FirstTimeOtp", "0");
                             // Sign in failed, display a message and update the UI
                             Log.w(TAG, "signInWithCredential:failure", task.getException());
                             if (task.getException() instanceof FirebaseAuthInvalidCredentialsException) {
@@ -473,13 +474,9 @@ public class GetOtpActivity extends AppCompatActivity {
     private boolean validatePhoneNumber() {
         String phoneNumber = "+91"+mPhoneNumberField.getText().toString();
 
-        helper.savePreferences("phoneNumber", phoneNumber);
-        if (TextUtils.isEmpty(phoneNumber)) {
-            //mPhoneNumberField.setError("Invalid phone number.");
-            return false;
-        }
-
-        return true;
+        UniversalHelper.savePreferences("phoneNumber", phoneNumber);
+        //mPhoneNumberField.setError("Invalid phone number.");
+        return !TextUtils.isEmpty(phoneNumber);
     }
 
     private void enableViews(View... views) {
@@ -495,20 +492,20 @@ public class GetOtpActivity extends AppCompatActivity {
     }
 
     private void initializeAll() {
-        mStartButton = (RelativeLayout) findViewById(R.id.btn_proceed);
-        tv_otpsent = (TextView) findViewById(R.id.tv_otpsent);
-        tv_notyour = (TextView) findViewById(R.id.tv_notyour);
-        mVerifyButton = (RelativeLayout) findViewById(R.id.btn_submit);
-        mPhoneNumberField = (EditText) findViewById(R.id.et_mobile);
-        mVerificationField = (EditText) findViewById(R.id.et_otp);
-        mResendButton = (RelativeLayout) findViewById(R.id.btn_resend);
-        rl_enterMobile = (LinearLayout) findViewById(R.id.rl_enterMobile);
-        ll_otp = (LinearLayout) findViewById(R.id.ll_otp);
+        mStartButton = findViewById(R.id.btn_proceed);
+        tv_otpsent = findViewById(R.id.tv_otpsent);
+        tv_notyour = findViewById(R.id.tv_notyour);
+        mVerifyButton = findViewById(R.id.btn_submit);
+        mPhoneNumberField = findViewById(R.id.et_mobile);
+        mVerificationField = findViewById(R.id.et_otp);
+        mResendButton = findViewById(R.id.btn_resend);
+        rl_enterMobile = findViewById(R.id.rl_enterMobile);
+        ll_otp = findViewById(R.id.ll_otp);
         //tv_enternumber = (TextView) findViewById(R.id.tv_enternumber);
-        tv_proceed = (TextView) findViewById(R.id.tv_proceed);
-        tv_didnt = (TextView) findViewById(R.id.tv_didnt);
-        tv_submit = (TextView) findViewById(R.id.tv_submit);
-        tv_resend = (TextView) findViewById(R.id.tv_resend);
+        tv_proceed = findViewById(R.id.tv_proceed);
+        tv_didnt = findViewById(R.id.tv_didnt);
+        tv_submit = findViewById(R.id.tv_submit);
+        tv_resend = findViewById(R.id.tv_resend);
     }
 
     private void loginApi(){
@@ -517,8 +514,8 @@ public class GetOtpActivity extends AppCompatActivity {
 
         ApiConfig getResponse = AppConfig.getRetrofit().create(ApiConfig.class);
 
-        Log.d("mobileNo",helper.loadPreferences("phoneNumber"));
-        Call<LoginResponse> call = getResponse.userLogin("ANDROID", helper.loadPreferences("phoneNumber"),fireBaseToken);
+        Log.d("mobileNo", UniversalHelper.loadPreferences("phoneNumber"));
+        Call<LoginResponse> call = getResponse.userLogin("ANDROID", UniversalHelper.loadPreferences("phoneNumber"),fireBaseToken);
         call.enqueue(new Callback<LoginResponse>() {
             @Override
             public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
@@ -536,17 +533,17 @@ public class GetOtpActivity extends AppCompatActivity {
                         String authToken = serverResponse.getData().getUserDetails().getAuthToken();
                         String profilePicture = serverResponse.getData().getUserDetails().getProfileImage();
                         String clientId = serverResponse.getData().getUserDetails().getClientId();
-                        helper.savePreferences("userId", userId);
-                        helper.savePreferences("authToken", authToken);
-                        helper.savePreferences("profileImage", profilePicture);
-                        helper.savePreferences("clientId", clientId);
+                        UniversalHelper.savePreferences("userId", userId);
+                        UniversalHelper.savePreferences("authToken", authToken);
+                        UniversalHelper.savePreferences("profileImage", profilePicture);
+                        UniversalHelper.savePreferences("clientId", clientId);
 
                         //startActivity(new Intent(GetOtpActivity.this, SignupActivity.class));
 
                         if (TextUtils.equals(String.valueOf(response.code()), "200")){
                             startActivity(new Intent(GetOtpActivity.this, MainActivity.class));
                         }else if (TextUtils.equals(String.valueOf(response.code()), "201")){
-                            helper.savePreferences("comeFrom","getOtpActivity");
+                            UniversalHelper.savePreferences("comeFrom","getOtpActivity");
                             startActivity(new Intent(GetOtpActivity.this, SignupActivity.class));
                         }
                     }

@@ -12,7 +12,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.aprilinnovations.autoloungeindia.R;
+
+import com.additinfotech.autoloungein.R;
 import com.aprilinnovations.autoloungeindia.activity.NotificationDetails;
 import com.aprilinnovations.autoloungeindia.datamodel.NotificationDataModel;
 import com.bumptech.glide.Glide;

@@ -10,7 +10,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.widget.ImageView;
 
-import com.aprilinnovations.autoloungeindia.R;
+import com.additinfotech.autoloungein.R;
 import com.aprilinnovations.autoloungeindia.adapter.VariantAdapter;
 import com.aprilinnovations.autoloungeindia.classes.ApiConfig;
 import com.aprilinnovations.autoloungeindia.classes.AppConfig;

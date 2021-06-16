@@ -9,7 +9,8 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 
-import com.aprilinnovations.autoloungeindia.R;
+
+import com.additinfotech.autoloungein.R;
 import com.aprilinnovations.autoloungeindia.helper.UniversalHelper;
 
 public class RequestActivity extends AppCompatActivity {

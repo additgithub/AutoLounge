@@ -15,7 +15,7 @@ import androidx.annotation.RequiresApi;
 
 import android.util.Log;
 
-import com.aprilinnovations.autoloungeindia.R;
+import com.additinfotech.autoloungein.R;
 import com.aprilinnovations.autoloungeindia.activity.ChatActivity;
 import com.aprilinnovations.autoloungeindia.activity.GetOtpActivity;
 import com.aprilinnovations.autoloungeindia.activity.MainActivity;

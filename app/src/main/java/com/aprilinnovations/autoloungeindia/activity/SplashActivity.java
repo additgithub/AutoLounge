@@ -6,7 +6,8 @@ import android.content.Intent;
 import android.os.Handler;
 import android.os.Bundle;
 
-import com.aprilinnovations.autoloungeindia.R;
+
+import com.additinfotech.autoloungein.R;
 import com.aprilinnovations.autoloungeindia.helper.UniversalHelper;
 import com.greysonparrelli.permiso.Permiso;
 import com.greysonparrelli.permiso.PermisoActivity;

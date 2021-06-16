@@ -19,7 +19,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.aprilinnovations.autoloungeindia.R;
+
+import com.additinfotech.autoloungein.R;
 import com.aprilinnovations.autoloungeindia.async.bean.PickResult;
 import com.aprilinnovations.autoloungeindia.async.bundle.PickSetup;
 import com.aprilinnovations.autoloungeindia.async.dialog.PickImageDialog;

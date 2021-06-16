@@ -3,7 +3,8 @@ package com.aprilinnovations.autoloungeindia.activity;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.aprilinnovations.autoloungeindia.R;
+import com.additinfotech.autoloungein.R;
+
 
 public class ProfileActivity extends AppCompatActivity {
 

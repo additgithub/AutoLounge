@@ -3,7 +3,8 @@ package com.aprilinnovations.autoloungeindia.async.keep;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.aprilinnovations.autoloungeindia.BuildConfig;
+import com.additinfotech.autoloungein.BuildConfig;
+
 
 public class Keep {
     private SharedPreferences pref;

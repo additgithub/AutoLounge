@@ -11,8 +11,9 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.additinfotech.autoloungein.R;
 import com.aprilinnovations.autoloungeindia.datamodel.BrandModel;
-import com.aprilinnovations.autoloungeindia.R;
+
 import com.aprilinnovations.autoloungeindia.activity.SelectModelActivity;
 import com.aprilinnovations.autoloungeindia.helper.UniversalHelper;
 

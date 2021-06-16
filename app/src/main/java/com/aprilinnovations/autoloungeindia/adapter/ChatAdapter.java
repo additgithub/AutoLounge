@@ -11,7 +11,8 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.aprilinnovations.autoloungeindia.R;
+
+import com.additinfotech.autoloungein.R;
 import com.aprilinnovations.autoloungeindia.activity.ChatActivity;
 import com.aprilinnovations.autoloungeindia.datamodel.ChatModel;
 import com.aprilinnovations.autoloungeindia.helper.UniversalHelper;

@@ -4,11 +4,11 @@ apply plugin: 'com.google.gms.google-services'
 android {
     compileSdkVersion 29
     defaultConfig {
-        applicationId "com.aprilinnovations.autoloungeindia"
+        applicationId "com.additinfotech.autoloungein"
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 4
-        versionName "1.3"
+        versionCode 1
+        versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         signingConfig signingConfigs.debug
     }

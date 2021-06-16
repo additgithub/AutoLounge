@@ -13,7 +13,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.aprilinnovations.autoloungeindia.R;
+
+import com.additinfotech.autoloungein.R;
 import com.aprilinnovations.autoloungeindia.activity.CarDetailsActivity;
 import com.aprilinnovations.autoloungeindia.datamodel.Car;
 import com.bumptech.glide.Glide;

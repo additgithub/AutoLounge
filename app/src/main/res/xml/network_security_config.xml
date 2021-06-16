@@ -7,5 +7,6 @@
         <domain includeSubdomains="true">18.222.30.136</domain>
         <domain includeSubdomains="true">192.168.31.126:9000</domain>
         <domain includeSubdomains="true">18.220.51.183</domain>
+        <domain includeSubdomains="true">theautoloungeindia</domain>
     </domain-config>
 </network-security-config>

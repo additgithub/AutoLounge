@@ -12,7 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.aprilinnovations.autoloungeindia.R;
+import com.additinfotech.autoloungein.R;
 import com.aprilinnovations.autoloungeindia.activity.ChatActivity;
 import com.aprilinnovations.autoloungeindia.activity.RequestReceivedActivity;
 import com.aprilinnovations.autoloungeindia.datamodel.ServiceHistoryModel;

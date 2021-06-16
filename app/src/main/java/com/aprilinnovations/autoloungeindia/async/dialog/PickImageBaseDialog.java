@@ -19,7 +19,8 @@ import android.view.Window;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.aprilinnovations.autoloungeindia.R;
+
+import com.additinfotech.autoloungein.R;
 import com.aprilinnovations.autoloungeindia.async.AsyncImageResult;
 import com.aprilinnovations.autoloungeindia.async.Util;
 import com.aprilinnovations.autoloungeindia.async.bean.PickResult;

@@ -5,7 +5,8 @@ import androidx.annotation.IntDef;
 import android.view.Gravity;
 import android.widget.LinearLayout;
 
-import com.aprilinnovations.autoloungeindia.R;
+
+import com.additinfotech.autoloungein.R;
 import com.aprilinnovations.autoloungeindia.async.enums.EPickType;
 
 import java.io.Serializable;

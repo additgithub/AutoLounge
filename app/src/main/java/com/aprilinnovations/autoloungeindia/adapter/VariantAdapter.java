@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.aprilinnovations.autoloungeindia.R;
+import com.additinfotech.autoloungein.R;
 import com.aprilinnovations.autoloungeindia.activity.CarInfoActivity;
 import com.aprilinnovations.autoloungeindia.datamodel.VariantModel;
 import com.aprilinnovations.autoloungeindia.helper.UniversalHelper;

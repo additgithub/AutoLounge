@@ -3,7 +3,7 @@ package com.aprilinnovations.autoloungeindia.async;
 import android.content.Intent;
 import android.os.AsyncTask;
 
-import com.aprilinnovations.autoloungeindia.R;
+import com.additinfotech.autoloungein.R;
 import com.aprilinnovations.autoloungeindia.async.bean.PickResult;
 import com.aprilinnovations.autoloungeindia.async.bundle.PickSetup;
 import com.aprilinnovations.autoloungeindia.async.enums.EPickType;
